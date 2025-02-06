@@ -1,0 +1,49 @@
+.shadow-lg {
+  background-color: #0000006b;
+  transition: margin 0.5s, padding 0.5s, background 0.5s, box-shadow 0.5s, transform 0.5s, opacity 0.5s;
+    transition: background-color 0.3s ease-in-out;
+    background-image: linear-gradient(180deg, #000000 0%, #3b3b3b00 100%);
+  
+    &.scrolled {
+      background-color: rgba(0, 0, 0, 0.9); /* Background color when scrolled */
+    }
+  }
+  nav {
+    padding: 28px 251px;
+  }
+  .fixed {
+    .mx-auto {
+      @media only screen and (max-width: 478px) {
+       padding: 20px !important;
+    }
+    }
+  }
+
+  .Mobile-Cta-button {
+    @media only screen and (max-width: 478px) {
+      background-color: #181818;
+   }
+  }
+  .Desktop-button {
+    @media only screen and (max-width: 1200px) {
+      display:none;
+  }
+  }
+  .nav-logo {
+    @media only screen and (max-width: 1200px) {
+      visibility: hidden;
+  }
+  @media only screen and (max-width: 4250px) {
+    visibility: visible;
+}
+  }
+
+  header {
+      nav {
+        @media only screen and (max-width: 1440px) {
+          padding: 20px 20px;
+      }
+  }
+}
+  
+

@@ -1,0 +1,56 @@
+.hero-section {
+    background-image: url('/images/Hero/herobg.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    overflow: hidden;
+    height: 1022px;
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        .hero-award {
+            margin-bottom: 30px;
+        }
+        .title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 70px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 44;
+        }
+    }
+    .hero-image {
+      position: absolute;
+      height: 429px;
+      left: -127px;
+      top: 360px;
+      width: 1368px;
+      @media only screen and (max-width: 1200px) {
+        display:none;
+    }
+      .image {
+        width: 1325px !important;
+      }
+    }
+    
+      /* Add an overlay effect to dim the background */
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      @media only screen and (max-width: 1200px) {
+       height: auto;
+    }
+}
+  
